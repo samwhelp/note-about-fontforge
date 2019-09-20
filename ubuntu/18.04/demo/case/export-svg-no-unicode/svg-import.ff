@@ -21,7 +21,7 @@ Reencode("iso10646-1")
 
 ## Import
 Print()
-Print("=== Export Start:")
+Print("=== Import Start:")
 
 
 i = 1
@@ -55,7 +55,7 @@ endloop
 
 
 Print()
-Print("=== Export End:")
+Print("=== Import End:")
 Print()
 
 ## Generate Demo-NoUni.ttf

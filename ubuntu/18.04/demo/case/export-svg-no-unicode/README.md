@@ -125,7 +125,7 @@ Copyright (c) 2000-2014 by George Williams. See AUTHORS for Contributors.
  Based on sources from 11:21 UTC 24-Sep-2017-ML-D.
  Based on source from git with hash:
 
-=== Export Start:
+=== Import Start:
 
 Import: [ellipsis.vert] To: [U+0061]
 
@@ -134,7 +134,7 @@ I'm sorry this file is too complex for me to understand (or is erroneous)
 
 Import: [uniFF5E.vert] To: [U+0062]
 
-=== Export End:
+=== Import End:
 
 
 Generate Demo-NoUni.ttf.
