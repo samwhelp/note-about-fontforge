@@ -1,0 +1,46 @@
+#!/usr/bin/env fontforge
+
+## Usage:
+# $ ./svg-export.ff ./TW-Kai-98_1.ttf
+
+## Reference
+# https://fontforge.github.io/en-US/documentation/scripting/
+# https://fontforge.github.io/scripting-alpha.html#GlyphInfo
+# https://fontforge.github.io/scripting-alpha.html#Export
+# https://fontforge.github.io/scripting-alpha.html#Print
+# https://fontforge.github.io/scripting-alpha.html#Open
+
+## Open File [TW-Kai-98_1.ttf]
+Open($1)
+
+
+## Select Glyph
+SelectWorthOutputting()
+
+
+Print()
+Print("=== Export Start:")
+Print()
+
+## Foreach Selected Glyph
+foreach
+	selected_unicode = GlyphInfo("Unicode")
+	if (selected_unicode == -1)
+		Print("Glyph.Unicode=1 : " + "Glyph.Unicode=" + GlyphInfo("Name"))
+		Export("svg-no-unicode/%n.svg")
+	else
+		Export("svg/%U.svg")
+	endif
+endloop
+
+Print()
+Print("=== Export End:")
+Print()
+
+Print()
+Print("Please check dir [svg] and [svg-no-unicode]:")
+Print()
+
+Print("$ ls -a -1 svg | less")
+Print("$ ls -a -1 svg-no-unicode | less")
+Print()

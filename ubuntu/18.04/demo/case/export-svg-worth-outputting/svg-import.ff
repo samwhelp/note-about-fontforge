@@ -1,0 +1,61 @@
+#!/usr/bin/env fontforge
+
+## Usage:
+# $ ./svg-import.ff svg/*
+
+## Reference:
+# https://fontforge.github.io/en-US/documentation/scripting/
+# https://fontforge.github.io/scripting-alpha.html
+# https://fontforge.github.io/scripting-alpha.html#New
+
+
+## Create New Font
+New()
+
+#SetFontNames("Demo")
+#SetFontNames("Demo", "Demo", "DemoCopy", "Book", "Copyright (c) 2019, People,,,", '1.0')
+SetFontNames("DemoCopy", "DemoCopy", "DemoCopy", "Regular", "Copyright (c) 2019, People,,,", '1.0')
+
+Reencode("iso10646-1")
+
+
+## Import
+Print()
+Print("=== Import Start:")
+
+
+i = 1
+while (i < $argc)
+	#Print(i, ": ", $argv[i]:r)
+	col = StrSplit($argv[i]:r, '/')
+	code_point = col[1]
+	#Print(code_point)
+	#Select("U+" + code_point)
+	ok = SelectIf("U+" + code_point)
+
+	if (ok == 1)
+		Import($argv[i])
+	else
+		Print(ok, ": U+" + code_point)
+	endif
+
+	i = i+1
+endloop
+
+
+Print()
+Print("=== Import End:")
+Print()
+
+## Generate Demo-Copy.ttf
+Generate("Demo-Copy.ttf")
+
+Print()
+Print("Generate Demo-Copy.ttf.")
+
+Print()
+Print("Please check:")
+Print()
+Print("$ file Demo-Copy.ttf")
+Print("$ showttf Demo-Copy.ttf | less")
+Print("$ fontforge Demo-Copy.ttf")
