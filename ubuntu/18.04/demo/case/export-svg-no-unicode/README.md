@@ -181,3 +181,30 @@ $ fontforge Demo-NoUni.ttf
 將剛剛安裝的字型，從系統移除。
 
 這些步驟，我寫成「Shell Script」，內容請參考「[font-remove.sh](font-remove.sh)」。
+
+
+## FontForge Script 參考文件
+
+### 教學
+
+* https://fontforge.github.io/en-US/tutorials/scripting/
+* https://fontforge.github.io/scripting-tutorial.html
+* https://fontforge.github.io/en-US/documentation/scripting/
+* https://fontforge.github.io/scripting.html
+
+### Api
+
+* https://fontforge.github.io/scripting-alpha.html
+* https://fontforge.github.io/scripting-alpha.html#Print
+* https://fontforge.github.io/scripting-alpha.html#New
+* https://fontforge.github.io/scripting-alpha.html#Open
+* https://fontforge.github.io/scripting-alpha.html#Generate
+* https://fontforge.github.io/scripting-alpha.html#Export
+* https://fontforge.github.io/scripting-alpha.html#Import
+* https://fontforge.github.io/scripting-alpha.html#SelectIf
+* https://fontforge.github.io/scripting-alpha.html#SelectWorthOutputting
+* https://fontforge.github.io/scripting-alpha.html#GlyphInfo
+* https://fontforge.github.io/scripting-alpha.html#SetFontNames
+* https://fontforge.github.io/scripting-alpha.html#Reencode
+* https://fontforge.github.io/scripting-alpha.html#StrSplit
+* https://fontforge.github.io/en-US/documentation/scripting/native/
