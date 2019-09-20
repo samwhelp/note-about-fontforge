@@ -15,6 +15,8 @@
 先在這個資料夾準備「TW-Kai-98_1.ttf」這個當案，
 可以在「[這個頁面](https://data.gov.tw/dataset/5961)」，找到「[下載連結](http://www.cns11643.gov.tw/AIDB/Open_Data.zip)」。
 
+> 寫這篇文，在測試的時候，是「108年8月13日更新」的版本。
+
 下載後，解開，然後可以在「Open_Data/Fonts」這個資料夾找到「TW-Kai-98_1.ttf」，
 
 我把整個步驟簡單寫成「Shell Script」，內容請參考「[prepare.sh](prepare.sh)」。
@@ -92,6 +94,9 @@ svg/ellipsis.vert.svg
 svg/uniFF5E.vert.svg
 ```
 
+> 關於「匯出」這個動作，也可以在「FontForge」的「圖形界面操作」，目前只有了解到「一次匯出一個」，還沒有了解到「批次匯出」，所以才寫成「FontForge Script」。操作方式，點選某一個有「字圖」的「碼位」，然後會跳出一個新視窗，在這個「新視窗」的「功能選單」找到「File/Export」，點選它，接著就跳出一個新的「對話框」，然後最下方，有一個「Format」欄位，可以下拉選「SVG」，按下「Save」按鈕，就可以「匯出svg」。
+注意：若看不到下方「Save」按鈕，可以用滑鼠拖拉更改「對話框」大小，就會顯示出來了。
+
 
 ## 匯入
 
@@ -161,6 +166,9 @@ $ fontforge Demo-NoUni.ttf
 路徑是「~/.local/share/fonts/Demo-NoUni.ttf」。
 
 這些步驟，我寫成「Shell Script」，內容請參考「[font-install.sh](font-install.sh)」。
+
+
+> 關於「匯入」這個動作，也可以在「FontForge」的「圖形界面操作」，請參考「匯出」這個動作，做反向操作，在「Glyph視窗」的「功能選單」有「File/Export」可選。
 
 
 ## 測試新產生的字型
