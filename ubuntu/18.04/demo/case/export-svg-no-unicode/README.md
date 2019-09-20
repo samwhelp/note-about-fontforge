@@ -149,6 +149,12 @@ $ fontforge Demo-NoUni.ttf
 從上面提示訊息，可以看到只有匯入[ellipsis.vert]和[uniFF5E.vert]。
 
 
+> 關於「匯入」這個動作，也可以在「FontForge」的「圖形界面操作」，請參考「匯出」這個動作，做反向操作，在「Glyph視窗」的「功能選單」有「File/Export」可選。
+
+
+> 關於「匯入失敗」因為「[Import](https://fontforge.github.io/scripting-alpha.html#Import)」沒有回傳值，並且目前我也還找不到其他偵測例外狀況的方式，所以就暫時不處理了。
+
+
 ## 安裝新產生的字型
 
 安裝新產生的字型，除了可以使用圖形界面安裝，
@@ -166,9 +172,6 @@ $ fontforge Demo-NoUni.ttf
 路徑是「~/.local/share/fonts/Demo-NoUni.ttf」。
 
 這些步驟，我寫成「Shell Script」，內容請參考「[font-install.sh](font-install.sh)」。
-
-
-> 關於「匯入」這個動作，也可以在「FontForge」的「圖形界面操作」，請參考「匯出」這個動作，做反向操作，在「Glyph視窗」的「功能選單」有「File/Export」可選。
 
 
 ## 測試新產生的字型
