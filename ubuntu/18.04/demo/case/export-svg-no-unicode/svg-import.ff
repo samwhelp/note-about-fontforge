@@ -1,0 +1,72 @@
+#!/usr/bin/env fontforge
+
+## Usage:
+# $ ./svg-import.ff svg/*
+
+## Reference:
+# https://fontforge.github.io/en-US/documentation/scripting/
+# https://fontforge.github.io/scripting-alpha.html
+# https://fontforge.github.io/scripting-alpha.html#New
+
+
+## Create New Font
+New()
+
+#SetFontNames("Demo")
+#SetFontNames("Demo", "Demo", "Demo", "Book", "Copyright (c) 2019, people,,,", '1.0')
+SetFontNames("DemoNoUni", "DemoNoUni", "DemoNoUni", "Regular", "Copyright (c) 2019, people,,,", '1.0')
+
+Reencode("iso10646-1")
+
+
+## Import
+Print()
+Print("=== Export Start:")
+
+
+i = 1
+while (i < $argc)
+
+	#Print(i, $argv[i]:r)
+	col = StrSplit($argv[i]:r, '/')
+	glyph_name = col[1]
+	#Print(glyph_name)
+	Print()
+
+	if (glyph_name == "ellipsis.vert")
+		code_point = "0061" # a
+	elseif (glyph_name == "uniFF5E.vert")
+		code_point = "0062" # b
+	elseif (glyph_name == "nonmarkingreturn")
+		code_point = "0063" # c
+	endif
+
+	ok = SelectIf("U+" + code_point)
+
+	if (ok == 1)
+		Print("Import: [" + glyph_name + "] To: [U+" + code_point + "]")
+		Import($argv[i])
+	else
+		Print(ok, ": U+" + code_point)
+	endif
+
+	i = i+1
+endloop
+
+
+Print()
+Print("=== Export End:")
+Print()
+
+## Generate Demo-NoUni.ttf
+Generate("Demo-NoUni.ttf")
+
+Print()
+Print("Generate Demo-NoUni.ttf.")
+
+Print()
+Print("Please check:")
+Print()
+Print("$ file Demo-NoUni.ttf")
+Print("$ showttf Demo-NoUni.ttf | less")
+Print("$ fontforge Demo-NoUni.ttf")
