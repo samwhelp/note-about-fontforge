@@ -38,7 +38,7 @@ $ make prepare
 
 ## 匯出
 
-從「TW-Kai-98_1.ttf」 匯出在「FontForge」裡「Unicode=-1」的「Glyph」，
+從「TW-Kai-98_1.ttf」 匯出在「FontForge」裡「WorthOutputting」的「Glyph」，
 
 這些步驟，我寫成「FontForge Script」，內容請參考「[svg-export.ff](svg-export.ff)」。
 
