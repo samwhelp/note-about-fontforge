@@ -2,9 +2,12 @@
 
 
 ## Usage:
+# $ ./svg-import.py svg/*.svg
 # $ ./svg-import.py svg/*
 # $ ./svg-import.py svg/{.[!.]*.svg,*.svg}
 
+
+# $ ls svg/*.svg
 # $ ls svg/*
 # $ ls svg/{.[!.]*,*}
 # $ ls svg/{.[!.]*.svg,*.svg}
@@ -39,9 +42,9 @@ if len(sys.argv) < 2:
 ## Create New Font
 target_font = fontforge.font()
 
-target_font.fontname = 'DemoNoUni'
-target_font.familyname = 'DemoNoUni'
-target_font.fullname = 'DemoNoUni'
+target_font.fontname = 'DemoCopy'
+target_font.familyname = 'DemoCopy'
+target_font.fullname = 'DemoCopy'
 #target_font.weight = 'Book'
 target_font.weight = 'Regular'
 target_font.copyright = 'Copyright (c) 2019, People,,,'
@@ -66,27 +69,21 @@ print("=== Import Start:")
 for source_svg_path in source_svg_list:
 	#print(source_svg_path)
 	col = source_svg_path.split('/', 1);
-	source_glyph_name = col[1][:-4]
-	#print(source_svg_path)
+	source_glyph_unicode = col[1][:-4]
+	target_glyph_unicode = int('0x' + source_glyph_unicode, 16)
+	target_glyph_name = fontforge.nameFromUnicode(target_glyph_unicode)
 
-	if source_glyph_name == 'ellipsis.vert':
-		target_glyph_name = 'a'
-	elif source_glyph_name == 'uniFF5E.vert':
-		target_glyph_name = 'b'
-	elif source_glyph_name == 'nonmarkingreturn':
-		target_glyph_name = 'c'
-	else:
-		continue
 
-	target_font.selection.select(target_glyph_name)
-	#print(target_glyph_name)
-	target_font.paste() ## this line is essential for call target_font[target_glyph_name]
+	target_font.selection.select(target_glyph_unicode)
+	target_font.paste() ## this line is essential for call target_font[target_glyph_unicode]
 
-	glyph = target_font[target_glyph_name]
+
+	#glyph = target_font[target_glyph_name]
+	glyph = target_font[target_glyph_unicode]
 	#print(dir(glyph))
 
-	print('')
-	print("Import: [{}] To: [{}]".format(source_glyph_name, target_glyph_name))
+	#print('')
+	#print("Import: [{}] To: [{}]".format(source_glyph_unicode, target_glyph_name))
 	glyph.importOutlines(source_svg_path)
 
 
@@ -95,17 +92,17 @@ print("=== Import End:")
 print('')
 
 
-## Generate Demo-NoUni.ttf
-target_font.generate('Demo-NoUni.ttf')
+## Generate Demo-Copy.ttf
+target_font.generate('Demo-Copy.ttf')
 
 
 print('')
-print("Generate Demo-NoUni.ttf.")
+print("Generate Demo-Copy.ttf.")
 
 print('')
 print("Please check:")
 print('')
-print("$ file Demo-NoUni.ttf")
-print("$ showttf Demo-NoUni.ttf | less")
-print("$ fontforge Demo-NoUni.ttf")
+print("$ file Demo-Copy.ttf")
+print("$ showttf Demo-Copy.ttf | less")
+print("$ fontforge Demo-Copy.ttf")
 print('')

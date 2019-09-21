@@ -68,11 +68,11 @@ The glyph named mu is mapped to U+03BC.
 
 === Export Start:
 
-Glyph.Unicode=1 : Glyph.Unicode=.notdef
-Glyph.Unicode=1 : Glyph.Unicode=.null
-Glyph.Unicode=1 : Glyph.Unicode=nonmarkingreturn
-Glyph.Unicode=1 : Glyph.Unicode=ellipsis.vert
-Glyph.Unicode=1 : Glyph.Unicode=uniFF5E.vert
+Glyph.Unicode=-1 : Glyph.Unicode=.notdef
+Glyph.Unicode=-1 : Glyph.Unicode=.null
+Glyph.Unicode=-1 : Glyph.Unicode=nonmarkingreturn
+Glyph.Unicode=-1 : Glyph.Unicode=ellipsis.vert
+Glyph.Unicode=-1 : Glyph.Unicode=uniFF5E.vert
 
 === Export End:
 

@@ -26,7 +26,7 @@ Print()
 foreach
 	selected_unicode = GlyphInfo("Unicode")
 	if (selected_unicode == -1)
-		Print("Glyph.Unicode=1 : " + "Glyph.Unicode=" + GlyphInfo("Name"))
+		Print("Glyph.Unicode=-1 : " + "Glyph.Unicode=" + GlyphInfo("Name"))
 		Export("svg-no-unicode/%n.svg")
 	else
 		Export("svg/%U.svg")
