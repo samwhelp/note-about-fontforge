@@ -1,0 +1,27 @@
+#!/usr/bin/env fontforge
+
+
+## Usage:
+# $ ./create-new-font.ff
+
+
+## New Font File
+New()
+
+
+## https://fontforge.github.io/scripting-alpha.html#SetFontNames
+SetFontNames("Demo", "Demo", "Demo", "Regular", "Copyright (c) 2019, people,,,", '1.0')
+
+
+## https://fontforge.github.io/scripting-alpha.html#Reencode
+#Reencode("iso10646-1")
+
+
+## Import 0061.svg
+code_point = '0061'
+SelectIf("U+" + code_point)
+Import("0061.svg")
+
+
+## Generate Demo.ttf
+Generate("Demo.ttf")

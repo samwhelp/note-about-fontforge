@@ -5,8 +5,8 @@
 # $ ./find-no-unicode.ff
 
 
-## Open File [TW-Kai-98_1.ttf]
-Open('TW-Kai-98_1.ttf')
+## Open File [Demo.ttf]
+Open('Demo.ttf')
 
 
 ## Select Glyph

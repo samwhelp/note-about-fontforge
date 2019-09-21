@@ -1,0 +1,21 @@
+#!/usr/bin/env fontforge
+
+
+## Usage:
+# $ ./create-new-font.ff
+
+
+## New Font File
+New()
+
+
+## https://fontforge.github.io/scripting-alpha.html#SetFontNames
+SetFontNames("Demo", "Demo", "Demo", "Regular", "Copyright (c) 2019, people,,,", '1.0')
+
+
+## https://fontforge.github.io/scripting-alpha.html#Reencode
+#Reencode("iso10646-1")
+
+
+## Generate Demo.ttf
+Generate("Demo.ttf")
