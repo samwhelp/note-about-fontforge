@@ -42,7 +42,7 @@ for glyph_name in font:
 	glyph = font[glyph_name]
 	if glyph.unicode == -1:
 		##print(dir(glyph))
-		print("Glyph.Unicode=-1 : Glyph.Unicode={}".format(glyph_name))
+		print("Glyph.Unicode=-1 : Glyph.Name={}".format(glyph_name))
 		glyph.export("svg-no-unicode/{}.svg".format(glyph_name))
 	else:
 		# https://docs.python.org/2.7/library/string.html#format-specification-mini-language

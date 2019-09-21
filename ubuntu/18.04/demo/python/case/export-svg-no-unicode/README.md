@@ -30,7 +30,7 @@ $ sudo apt-get install python-fontforge
 
 ### 準備字型檔
 
-先在這個資料夾準備「TW-Kai-98_1.ttf」這個當案，
+先在這個資料夾準備「TW-Kai-98_1.ttf」這個檔案，
 可以在「[這個頁面](https://data.gov.tw/dataset/5961)」，找到「[下載連結](http://www.cns11643.gov.tw/AIDB/Open_Data.zip)」。
 
 > 寫這篇文，在測試的時候，是「108年8月13日更新」的版本。
@@ -88,11 +88,11 @@ But its name indicates it should be mapped to U+00B5.
 
 === Export Start:
 
-Glyph.Unicode=-1 : Glyph.Unicode=.notdef
-Glyph.Unicode=-1 : Glyph.Unicode=.null
-Glyph.Unicode=-1 : Glyph.Unicode=nonmarkingreturn
-Glyph.Unicode=-1 : Glyph.Unicode=ellipsis.vert
-Glyph.Unicode=-1 : Glyph.Unicode=uniFF5E.vert
+Glyph.Unicode=-1 : Glyph.Name=.notdef
+Glyph.Unicode=-1 : Glyph.Name=.null
+Glyph.Unicode=-1 : Glyph.Name=nonmarkingreturn
+Glyph.Unicode=-1 : Glyph.Name=ellipsis.vert
+Glyph.Unicode=-1 : Glyph.Name=uniFF5E.vert
 
 === Export End:
 

@@ -1,0 +1,30 @@
+#!/usr/bin/env fontforge
+
+
+## Usage:
+# $ ./svg-export.ff
+
+
+## Open File [TW-Kai-98_1.ttf]
+Open('TW-Kai-98_1.ttf')
+
+
+## Select Glyph
+SelectWorthOutputting()
+
+
+Print()
+Print("=== Find Start:")
+Print()
+
+## Foreach Selected Glyph And Find Unicode=-1
+foreach
+	selected_unicode = GlyphInfo("Unicode")
+	if (selected_unicode == -1)
+		Print("Glyph.Unicode=-1 : " + "Glyph.Name=" + GlyphInfo("Name"))
+	endif
+endloop
+
+Print()
+Print("=== Find End:")
+Print()
