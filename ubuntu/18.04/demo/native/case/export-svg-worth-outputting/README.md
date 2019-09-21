@@ -145,7 +145,7 @@ $ make svg-import
 
 會顯示
 
-``` bash
+```
 Copyright (c) 2000-2014 by George Williams. See AUTHORS for Contributors.
  License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
  with many parts BSD <http://fontforge.org/license.html>. Please read LICENSE.
