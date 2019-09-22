@@ -25,7 +25,7 @@ showttf [-verbose] [-headers] ttf-file
 $ showttf [-verbose] ttf-file
 ```
 
-## Man Page
+## ManPage
 
 執行下面指令，觀看「showttf」的「[Manpage](http://manpages.ubuntu.com/manpages/bionic/en/man1/showttf.1.html)」。
 
@@ -35,7 +35,7 @@ $ man showttf
 
 ## Package
 
-### 已安裝
+### 已安裝時查詢
 
 執行
 
@@ -50,7 +50,7 @@ fontforge-extras: /usr/share/man/man1/showttf.1.gz
 fontforge-extras: /usr/bin/showttf
 ```
 
-### 未安裝
+### 未安裝時查詢
 
 執行
 
