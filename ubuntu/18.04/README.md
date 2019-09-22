@@ -11,13 +11,14 @@
 或是從「[文章索引](all.md)」找到更多議題。
 
 
-## 相關討論串
-
-
-
-
 ## 如何觀看本文件
 
 請參考「[howto-read.md](howto-read.md)」。
 
 本文件「[index.html](https://github.com/samwhelp/note-about-fontforge/blob/gh-pages/ubuntu/18.04/index.html)」是採用「[docsify.js](docsify.md)」這個工具來製作的。
+
+
+## 索引
+
+* [all](all.md) ([頁面](https://samwhelp.github.io/note-about-fontforge/ubuntu/18.04/#/all))
+* [sidebar](_sidebar.md)
