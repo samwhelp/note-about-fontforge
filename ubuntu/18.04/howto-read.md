@@ -30,6 +30,8 @@ make view
 只要連到「[https://samwhelp.github.io/note-about-fontforge/ubuntu/18.04/](https://samwhelp.github.io/note-about-fontforge/ubuntu/18.04/)」就可以看到。
 
 
+
+
 ## 下一步
 
 * [回索引](all.md)
