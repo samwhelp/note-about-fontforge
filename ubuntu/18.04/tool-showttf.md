@@ -22,7 +22,13 @@ showttf [-verbose] [-headers] ttf-file
 執行
 
 ``` sh
-$ showttf [-verbose] ttf-file
+$ showttf --help
+```
+
+顯示
+
+```
+showttf [-verbose] ttf-file
 ```
 
 ## ManPage
@@ -54,7 +60,7 @@ fontforge-extras: /usr/bin/showttf
 
 執行
 
-```
+``` sh
 $ apt-file search showttf
 ```
 
