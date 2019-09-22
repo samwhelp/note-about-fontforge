@@ -28,6 +28,7 @@
 
 * [Reference](reference.md)
 * [Scripting](scripting-reference.md)
+* [討論案例](case.md)
 
 ## 關於
 
