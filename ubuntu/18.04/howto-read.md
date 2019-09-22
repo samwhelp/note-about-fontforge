@@ -25,6 +25,9 @@ make view
 就會開啟「firefox」，觀看「[http://localhost:8080/](http://localhost:8080/)」。
 
 
+## 觀看網路上的版本
+
+只要連到「[https://samwhelp.github.io/note-about-fontforge/ubuntu/18.04/](https://samwhelp.github.io/note-about-fontforge/ubuntu/18.04/)」就可以看到。
 
 
 ## 下一步
