@@ -1,0 +1,3 @@
+#!/usr/bin/env fontforge
+
+Print("Hello Native")
