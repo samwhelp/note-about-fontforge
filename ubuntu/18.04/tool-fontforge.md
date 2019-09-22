@@ -79,7 +79,7 @@ Send bug reports to:	fontforge-devel@lists.sourceforge.net
 
 ## 使用範例
 
-### --new
+### 開啟新檔
 
 執行下面指令
 
@@ -126,7 +126,7 @@ $ fontforge Demo.sfdir
 
 可以參考「[#2 回覆: 有無現成的把TTF包含字元輸出成純文字檔的圖形介面工具] (https://www.ubuntu-tw.org/modules/newbb/viewtopic.php?post_id=361790#forumpost361790)」
 
-### Exec Script
+### 執行腳本
 
 關於這部份請參考「[scripting.md](scripting.md)」。
 
