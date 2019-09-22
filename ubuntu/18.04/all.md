@@ -7,6 +7,11 @@
 * [如何安裝 FontForge](install.md)
 
 
+## 工具
+
+* [fontforge](tool-fontforge.md)
+* [showttf](tool-showttf.md)
+
 ## 腳本
 
 * [索引](scripting.md)
