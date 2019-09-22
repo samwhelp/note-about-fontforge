@@ -17,5 +17,5 @@
 ## script
 
 * [native](script/native/main.ff)
-* [python](script/python/main.ff)
+* [python](script/python/main.py)
 * [python-module](script/python-module/main.py)
