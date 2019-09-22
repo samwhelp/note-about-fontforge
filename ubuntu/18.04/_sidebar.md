@@ -19,7 +19,6 @@
 
 * 連結
 	* [Reference](reference.md)
-	* [Scripting](scripting-reference.md)
 	* [Case](case.md)
 
 * 關於
