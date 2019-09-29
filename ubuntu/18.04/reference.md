@@ -17,6 +17,7 @@
 ## 相關筆記
 
 *  Ubuntu 問答集 / [字型安裝與設定](http://samwhelp.github.io/book-ubuntu-qna/read/howto/configure-font/)
+* [CNS11643 使用筆記](https://samwhelp.github.io/note-about-cns11643)
 
 
 
